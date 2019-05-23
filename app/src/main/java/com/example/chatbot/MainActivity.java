@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity  implements AIListener {
         setContentView(R.layout.activity_main);
 
 
-        final AIConfiguration config = new AIConfiguration("9a8fa0380cc343d7af56217ac01ceb75",
+        final AIConfiguration config = new AIConfiguration("<CLIENT-ACCESS-TOKEN>",
                 AIConfiguration.SupportedLanguages.English,
-                AIConfiguration.RecognitionEngine.System);
+                AIConfiguration.RecognitionEngine.System);  //Replace with your client token
 
 
         aiService = AIService.getService(this, config);
