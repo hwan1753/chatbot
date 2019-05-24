@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity  implements AIListener, Text
             requestAudioPermissions();
         }
 
-        final AIConfiguration config = new AIConfiguration("9a8fa0380cc343d7af56217ac01ceb75",
+        final AIConfiguration config = new AIConfiguration("<CLIENT-TOKEN>",
                 AIConfiguration.SupportedLanguages.English,
-                AIConfiguration.RecognitionEngine.System);
+                AIConfiguration.RecognitionEngine.System); //Enter your token in <CLIENT-TOKEN>
         textToSpeech = new TextToSpeech(this,  this);
 
         aiService = AIService.getService(this, config);
